@@ -21,7 +21,7 @@ for message in st.session_state.chat_history:
         st.markdown(message["content"])
 
 # When user sends message
-if user_input and groq_api_key:
+if user_input and api_key:
     # Add user message to history
     st.session_state.chat_history.append({"role": "user", "content": user_input})
     with st.chat_message("user"):
