@@ -29,7 +29,7 @@ if user_input and groq_api_key:
 
     # Prepare Groq API call
     headers = {
-        "Authorization": "Bearer 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",
+        "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json"
     }
 
