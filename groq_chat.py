@@ -6,7 +6,7 @@ import os
 st.title("💬 Chat with Groq LLM")
 
 # Sidebar to enter Groq API Key
-groq_api_key = st.sidebar.text_input("Enter your grok api key here!", type="password")
+api_key = st.secrets["GROQ_API_KEY"]
 
 # Chat input
 user_input = st.chat_input("Type your message...")
